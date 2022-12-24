@@ -8,7 +8,7 @@ body, html {
   margin: 0;
   font-family: sans-serif;
   color: #333;
-  background-color:lightslategray;
+  background-color: rgba(216,216,216,0.89);
 }
 
 a {
