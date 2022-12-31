@@ -13,6 +13,8 @@
     <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
   </div>
 
+  {{!-- loggedIn is getting passed from home-routes.js --}}
+  {{!-- variables that are passed to view templates are automatically passed to the main layout --}}
   {{#if loggedIn}}
     <form class="comment-form">
       <div>
@@ -26,6 +28,8 @@
     </form>
   {{/if}}
 
+{{!-- That's right—to use a partial, all we need is the > character, followed by 
+      the name of the partial file and the object we'll pass to the partial. --}}
 {{> comments post.comments }}
 </article>
 
